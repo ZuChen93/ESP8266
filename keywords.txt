@@ -1,0 +1,46 @@
+###########################################
+# Syntax Coloring Map For ESP8266
+###########################################
+
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+
+ESP8266	KEYWORD1
+connList KEYWORD1
+connData KEYWORD1
+conn KEYWORD1
+connNum KEYWORD1
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+     ATE KEYWORD2
+     Test KEYWORD2
+     SoftReset KEYWORD2
+     GetVersion KEYWORD2
+     GetWIFIMode KEYWORD2
+     SetWIFIMode KEYWORD2
+     SetJoinAP KEYWORD2
+     SetQuitAP KEYWORD2
+     GetAPConfig KEYWORD2
+     SetAPConfig KEYWORD2
+     GetCurrentAP KEYWORD2
+     GetAPList KEYWORD2
+     GetIFList KEYWORD2
+     SetIPMode KEYWORD2
+     SetIPMux KEYWORD2
+     SetIPServer KEYWORD2
+     SendIPData KEYWORD2
+     SendIPData KEYWORD2
+     SetIPConnection KEYWORD2
+     SetIPConnection KEYWORD2
+     SetIPTimeout KEYWORD2
+     GetIPStatus KEYWORD2
+     GetIPTimeout KEYWORD2
+     GetIPList KEYWORD2
+     StopTransmission KEYWORD2
+     WaitConnect KEYWORD2
+     GetIPData KEYWORD2
+###########################################
+# Constants (LITERAL1)
+###########################################
