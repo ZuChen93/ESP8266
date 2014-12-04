@@ -63,9 +63,10 @@ bool ESP8266::SoftReset()
     unsigned long time = millis();
     while (millis() - time < _TIMEOUT)
     {
-        if (Serial3.find("Ready"))      //For v0018000902 ECHO:[System Ready, Vendor:www.ai-thinker.com]
+        //if (Serial3.find("Ready"))    //For v0018000902 ECHO:[System Ready, Vendor:www.ai-thinker.com]
+		if (Serial3.find("ready"))	  //For v0018000902-AI03 ECHO:[Vendor:www.ai-thinker.com Version:0.9.2.4] ready
         {
-            while (Serial3.read() > 0);  //Clear buffer
+            // while (Serial3.read() > 0);  //Clear buffer
             return true;
         }
     }
@@ -420,6 +421,15 @@ bool ESP8266::SetIPTimeout(unsigned int time)
 {
     Serial3.print("AT+CIPSTO=");
     Serial3.println(time);
+    Serial3.flush();
+
+    return waitOK();
+}
+
+bool ESP8266::SetIPClose(byte id)
+{
+    Serial3.print("AT+CIPCLOSE=");
+    Serial3.println(id);
     Serial3.flush();
 
     return waitOK();

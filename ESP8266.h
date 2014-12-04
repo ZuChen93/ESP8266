@@ -71,6 +71,7 @@ public:
     bool SetIPConnection(bool protocol, String address, unsigned int port);
     bool SetIPConnection(byte id, bool protocol, String address, unsigned int port);
     bool SetIPTimeout(unsigned int time);
+    bool SetIPClose(byte id);
     byte GetIPStatus();
     unsigned int GetIPTimeout();
     String GetIPList();

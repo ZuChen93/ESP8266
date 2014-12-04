@@ -41,6 +41,7 @@ connNum KEYWORD1
      StopTransmission KEYWORD2
      WaitConnect KEYWORD2
      GetIPData KEYWORD2
+     SendIPClose KEYWORD2
 ###########################################
 # Constants (LITERAL1)
 ###########################################
