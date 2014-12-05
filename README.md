@@ -1,12 +1,12 @@
 ESP8266 Arduino library
 =======
 2014/12/5
-    Modified function:SoftReset()
-    Add function:SetIPClose(byte id)
-2014/11
-    First Version
+	(1)Modified function:SoftReset()
+	(2)Add function:SetIPClose(byte id)
+    
+2014/11/8
+	First Version
 
-Arduino library for ESP8266
 ###########################################
 # Methods and Functions ()
 ###########################################
