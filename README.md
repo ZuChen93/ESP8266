@@ -1,6 +1,4 @@
 +ESP8266 Arduino library
-This Library is for Arduino Mega (Arduino DUE maybe ok). 
-If you need to use it on other boards (only one serial port), replace all "Serail3" to "Serail" in the file "ESP8266.cpp".
 =======
 2014/12/5
 	(1)Modified function:SoftReset()
