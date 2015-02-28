@@ -42,6 +42,7 @@ connNum KEYWORD1
      WaitConnect KEYWORD2
      GetIPData KEYWORD2
      SendIPClose KEYWORD2
+     CustomCommand KEYWORD2
 ###########################################
 # Constants (LITERAL1)
 ###########################################

@@ -434,3 +434,18 @@ bool ESP8266::SetIPClose(byte id)
 
     return waitOK();
 }
+
+String ESP8266::CustomCommand(String command)
+{
+	String result = "";
+	Serial3.println(command);
+	Serial3.flush();
+
+	while (1)
+	{
+		result += Serial3.readString();
+		if (result.indexOf("OK") != -1 || result.indexOf("ERROR") != -1)
+			break;
+	}
+	return result;
+}
